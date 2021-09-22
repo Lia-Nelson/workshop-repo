@@ -11,6 +11,7 @@ def generateName(filename):
   for line in file:
     names.append(line.strip())
   # print(names)
+  file.close()
 
   random.shuffle(names)
   return names[0]
