@@ -3,6 +3,23 @@
 # Print A SoftDev Student's Name, Amalgamated Version
 # 2021-09-26
 
+'''
+Summary: 
+After looking at all three of our files, we decided that it would be easiest
+to read the names off of two separate text files, one for period 1 and the 
+other for period 2. Our generate_name function takes in each of those files
+and tries to open it (try, except courtesy of Thomas' group). It adds the 
+contents to a list and then shuffles it and prints the first index. If opening 
+the files or looking at their content is not possible, it prints the according
+error message.
+
+Discoveries:
+
+Questions:
+
+Comments:
+'''
+
 import random
 
 def generate_name(pd1_file, pd2_file):
