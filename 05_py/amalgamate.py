@@ -14,10 +14,18 @@ the files or looking at their content is not possible, it prints the according
 error message.
 
 Discoveries:
+- we learned how to use try: except: in python (because none of us took year long intro)
 
 Questions:
+- we discussed whether to print the outputs inside the function or whether to
+return them and then print them outside of the function.
+- how might we change the code to make it run for infinite periods of students?
 
 Comments:
+- although it is faster to generate a random integer and take that index of the 
+array instead of shuffling, we ended up going with random.shuffle(array) because
+it looks prettier in the code and the lists aren't too long.
+
 '''
 
 import random
