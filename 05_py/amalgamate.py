@@ -14,7 +14,8 @@ the files or looking at their content is not possible, it prints the according
 error message.
 
 Discoveries:
-- we learned how to use try: except: in python (because none of us took year long intro)
+- we learned how to use try: except: in python (because none of us took year 
+long introCS)
 
 Questions:
 - we discussed whether to print the outputs inside the function or whether to
