@@ -1,0 +1,18 @@
+We ran the command in the terminal and it seemed like nothing happened.
+BUT!! Then we went to the home directory and cded into the new myherozero
+folder that was created. We found 3 folders and a pyvenv.cfg file.
+
+We opened the pyvenv.cfg file and it gave a route to the home 
+python directory. It also tells us the version of python that we're 
+using and unincludes system packages.
+
+Noakai told us that when he uses pycharm it
+automatically creates a venv file to set up.
+
+We googled venv in python and looked at documentation. It told us
+that venv creates a virtual environment at your specified path.
+In a virtual environment, libraries used are separately so you 
+can download different things.
+
+Sources:
+https://docs.python.org/3/library/venv.html
