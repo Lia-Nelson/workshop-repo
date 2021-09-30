@@ -6,6 +6,9 @@ K08 -- Cross Pollination and Virtual Insanity
 
 Q/C/C
 - we both used random.choices
-- we decided to parse the csv files differently (manual vs )
+- we decided to parse the csv files differently (manual vs csvfile)
+- one group multiplied numbers to make them all integers which we
+considered at first and then decided against
+- one group wrote their own split function, which exists in python
 
 - upper right for concurrent gui sessions
