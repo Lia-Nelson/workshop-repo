@@ -14,5 +14,9 @@ that venv creates a virtual environment at your specified path.
 In a virtual environment, libraries used are separately so you 
 can download different things.
 
+We looked at the bin folder, which has normal python dependencies.
+We looked in the include folder and saw that it was empty. We 
+assumed that this might be for the user to include specialized stuff.
+
 Sources:
 https://docs.python.org/3/library/venv.html
