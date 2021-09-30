@@ -1,0 +1,11 @@
+Wombats (Eliza Knapp, Josephine Lee, Noakai Aronesty)
+SoftDev
+K08 -- Cross Pollination and Virtual Insanity
+2021-09-30
+
+
+Q/C/C
+- we both used random.choices
+- we decided to parse the csv files differently (manual vs )
+
+- upper right for concurrent gui sessions
