@@ -1,3 +1,8 @@
+Wombats (Eliza Knapp, Josephine Lee, Noakai Aronesty)
+SoftDev
+K08 -- Cross Pollination and Virtual Insanity
+2021-09-30
+
 We ran the command in the terminal and it seemed like nothing happened.
 BUT!! Then we went to the home directory and cded into the new myherozero
 folder that was created. We found 3 folders and a pyvenv.cfg file.
@@ -14,9 +19,13 @@ that venv creates a virtual environment at your specified path.
 In a virtual environment, libraries used are separately so you 
 can download different things.
 
-We looked at the bin folder, which has normal python dependencies.
+We looked at the bin and lib folder, which have normal python dependencies.
 We looked in the include folder and saw that it was empty. We 
 assumed that this might be for the user to include specialized stuff.
+
+We concluded that -m venv creates a virtual environment to work 
+in so that you can manage versions of different libraries. A big
+one that we've used before is one that runs python 2
 
 Sources:
 https://docs.python.org/3/library/venv.html
