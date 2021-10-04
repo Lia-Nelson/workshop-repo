@@ -14,10 +14,6 @@ def hello_world():
 app.debug = True
 app.run()
 
-#The same extra string is still there, but, and the rest looks similar
-#Right before it runs "app.debug = True" is stated
-#It usually says that the debuger is off, so maybe app.debug = True turns it on?
-
-#RESULTS
-
-#Everything went the same as v2 but the debugger is now on!
+# this is the same as the last version except the debugger is set to true
+# after breaking stuff for exploration, we noticed that it doesn't really change anything if you majorly break code (random text)
+# we are confused about what the debugger actually helps with

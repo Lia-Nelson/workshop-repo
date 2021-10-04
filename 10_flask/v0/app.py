@@ -11,6 +11,5 @@ def hello_world():
     return "No hablo queso!"  # Q3: Will this appear anywhere? How u know?
 
 app.run()  # Q4: Where have you seen similar construcs in other languages?
-                
-#Same as the app.py from KO9, should print the __name__ in the terminal, which is __main__, and print "No hable queso!" on the browser.
-#Worked as expected and as it did previously
+
+# This file is the same as last hw- results in bigbrain.txt of the other folder
