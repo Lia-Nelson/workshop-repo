@@ -1,9 +1,14 @@
 # Wombats (Eliza Knapp [ducky: Douglas], Noakai Aronesty [ducky: Wombat], Ryan Wang [ducky: TBD])
+# SoftDev
+
 
 from flask import Flask
 app = Flask(__name__) #create instance of class Flask
 
 @app.route("/")       #assign fxn to route
+def roster():
+  return "ROSTER"
+
 def hello_world():
     print("the __name__ of this module is... ") # here, the print above is clearer
     print(__name__)
