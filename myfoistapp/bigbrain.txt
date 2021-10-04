@@ -1,0 +1,27 @@
+Wombats (Eliza Knapp, Noakai Aronesty)
+SoftDev
+K09 -- Simple Path to Greatness
+2021-10-03
+
+Q0: Where have you seen similar syntax in other langs?
+
+In a lot of other languages- particularly python, where a variable
+is set to the output of a function.
+
+Q1: What points of reference do you have for meaning of '/'?
+It is the separator in paths in the terminal. In this case it means 
+that there is no specific path after the file name past localhost or
+whatever the name of the site is.
+
+Q2: Where will this print to? Q3: What will it print?
+This will print to the inspect element console on the website.
+
+Q3: Will this appear anywhere? How u know?
+This will appear on the main screen of the site because we
+assumed that upon the app running all the functions get run 
+too (because there's no main).
+
+Q4: Where have you seen similar construcs in other languages?
+In java when you run methods from specific objects, you call them by
+typing object.method(), just like this. For ex. arraylist.size()
+                
