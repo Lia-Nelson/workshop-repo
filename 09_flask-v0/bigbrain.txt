@@ -1,4 +1,4 @@
-Wombats (Eliza Knapp, Noakai Aronesty)
+Wombats (Eliza Knapp [ducky: Douglas], Noakai Aronesty [ducky: Wombat])
 SoftDev
 K09 -- Simple Path to Greatness
 2021-10-03
@@ -15,6 +15,15 @@ whatever the name of the site is.
 
 Q2: Where will this print to? Q3: What will it print?
 This will print to the inspect element console on the website.
+
+EDIT: it prints to the terminal that is running python3 app.py.
+- we switched it to print "hey" instead of __name__
+- __name__ prints __main__ 
+- we googled it and __name__ in python is defaulted
+to main, but if a file is being imported, it is not main 
+anymore. It can check what script is being run.
+
+Source: https://www.geeksforgeeks.org/__name__-special-variable-python/
 
 Q3: Will this appear anywhere? How u know?
 This will appear on the main screen of the site because we
