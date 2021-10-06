@@ -1,0 +1,21 @@
+Wombats (Eliza Knapp, Noakai Aronesty, Ryan Wang)
+SoftDev
+K11 -- Some Things Never Change
+2021-10-06
+
+First, we looked at app.py, which was very similar to the previous
+times we looked at it. Then, we opened the static folder and saw foo
+and foo.html.
+
+We predicted that when you just run app.py at localhost, you would 
+just see the same thing as usual ("no hablo queso"). But, when
+we went to the static/foo.html path, we predicted that we would see
+the uncommented html code. We were not quite sure what would happen
+when we went to foo- our best guess was that it just loaded as an
+html file.
+
+__RAN WEBSITE__
+
+Once we ran the website, we observed that our predictions for app.py
+and foo.html were correct, but static/foo downloaded the txt file, foo
+onto our machine. 

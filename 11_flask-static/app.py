@@ -1,6 +1,7 @@
 # Wombats (Eliza Knapp, Noakai Aronesty, Ryan Wang)
 # SoftDev
-# Oct 2021 
+# K11 -- Some Things Never Change
+# 2021-10-06
 
 # DEMO 
 # basics of /static folder
