@@ -1,4 +1,4 @@
-# Wombats (Eliza Knapp [ducky: Douglas], Noakai Aronesty [ducky: Wombat], Ryan Wang [ducky: TBD])
+# Wombats (Eliza Knapp [ducky: Douglas], Noakai Aronesty [ducky: Wombat], Ryan Wang [ducky: Jack])
 # SoftDev
 # K10 -- Putting Little Pieces Together
 # 2021-10-04
@@ -34,12 +34,15 @@ def occupations(): #edited to return instead of print
         return(randomList[0])
 
 @app.route("/")       #assign fxn to route
-def roster():
+def main():
     print("the __name__ of this module is... ")
     print(__name__)
-    return "<h2>Wombats (Eliza Knapp [ducky: Douglas], Noakai Aronesty [ducky: Wombat], Ryan Wang [ducky: TBD])</h2>" \
-           + "<b>Chosen Job:</b><br>" + occupations() + "<br><br>"\
-           + "<b>Possible Jobs:</b><br>" + job_ret
+    #Change font and color:
+    return '<style> body{font-family: "Trebuchet MS", sans-serif;}</style>' \
+           '<h2>Wombats (Eliza Knapp [ducky: Douglas], Noakai Aronesty [ducky: Wombat], Ryan Wang [ducky: Jack])</h2>'\ 
+           + '<b>Chosen Job:</b><br>' + '<div style="color:#28B463">' + occupations() + '</div>' \
+           + '<br><br>'\
+           + '<b>Possible Jobs:</b><br>' + job_ret
 
 if __name__ == "__main__":  # true if this file NOT imported
     app.debug = True        # enable auto-reload upon code change (COOL!) 
