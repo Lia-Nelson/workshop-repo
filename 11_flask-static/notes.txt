@@ -19,3 +19,6 @@ __RAN WEBSITE__
 Once we ran the website, we observed that our predictions for app.py
 and foo.html were correct, but static/foo downloaded the txt file, foo
 onto our machine. 
+
+Then, we created fixie.html, strongly based on foo.html. We also 
+changed the font using the style tab to learn more!
