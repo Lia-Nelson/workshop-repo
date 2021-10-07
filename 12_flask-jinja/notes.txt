@@ -1,3 +1,8 @@
+Wombats (Eliza Knapp, Noakai Aronesty, Ryan Wang)
+SoftDev
+K12 -- ...or The Only Constant is Change?
+2021-10-07
+
 First, we looked at and ran app.py. We noticed that in addition to the 
 usual no hablo queso function, there was also a return template function.
 We saw that there was a template folder and the function in app.py
