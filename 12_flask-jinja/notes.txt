@@ -1,0 +1,20 @@
+First, we looked at and ran app.py. We noticed that in addition to the 
+usual no hablo queso function, there was also a return template function.
+We saw that there was a template folder and the function in app.py
+refered to the html file inside the template folder. We wondered how it 
+knows without a path that model_tmplt exists. We assumed that it was the 
+same as the static folder where it is known that it exists. To show this,
+we changed the name of the templates folder to hello. It no longer worked.
+We got an error- template not found error, because it couldn't find the 
+template file.
+
+Next, we observed more closely the code that was at the route /my_foist_template.
+We saw that the first argument calls the template, and the rest are variables 
+that can be accessed from the template file (model_tmplt.html) by delimiting
+the variables in {{ variable name }}. We explored further by adding a new 
+variable, which we called wombat in honor of our team name, and setting it 
+equal to the value "hello". When we put wombat in curly braces, the value
+that it was set to rendered on the page (the top now says hello in big letters).
+
+We wondered, does it replace all instances of the variable wombat and predicted
+that it did. Update: it does!
