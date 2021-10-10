@@ -23,7 +23,6 @@ def readfile(filepath):
 
     # remove unnecessary item
     occupations_dict.pop('Total')
-    print("afjds")
 
     return occupations_dict
 
@@ -31,8 +30,11 @@ def readfile(filepath):
 def random_occupation(occupations):
     # choose random occupation given weights
     occupation_list = list(occupations.keys())
-    # weights = occupations.values()
-    # choice = random.choices(occupation_list, weights)
+    values = occupations.values()
+    weights = []
+    for value in values:
+      weights.append(value[0])
 
-    # return(choice[0])
-    return 5
+    choice = random.choices(occupation_list, weights)
+
+    return(choice[0])
