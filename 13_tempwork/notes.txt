@@ -1,0 +1,19 @@
+Hedgehogs (Andrew Juang, David Chong, Eliza Knapp)
+SoftDev
+K13 -- Template for Success
+2021-10-08
+
+Things we noted:
+- random.choices seemed like the cleanest way to decide on an occupation
+- to loop in html, we copied the existing structure of {%}
+- it was cleaner to put our functions in a separate python file, import
+into app.py and then use them like that
+- .values() on a dictionary makes a list of all the values
+- .items() has key, value pairs in a dictionary which made our for loop 
+convenient
+- when you plug a file into the functions.py, you do actually need to 
+specify that it is in the data folder
+- we wonder, still, why the last row of the csv file is there. should
+we be using it?!?
+
+EGO:
