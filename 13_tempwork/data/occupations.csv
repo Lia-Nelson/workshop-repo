@@ -1,24 +1,24 @@
-Job Class,Percentage
-Management,6.1
-Business and Financial operations,5
-Computer and Mathematical,2.7
-Architecture and Engineering,1.7
-"Life, Physical and Social Science",0.9
-Community and Social Service,1.6
-Legal,0.8
-"Education, training and library",6.1
-"Arts, design, entertainment, sports and media",1.7
-Healthcare practioners and technical,5.5
-Healthcare support,2.8
-Protective service,2.3
-Food preparation and serving,8.3
-Building and grounds cleaning and maintenance,3.7
-Personal care and service,4
-Sales,10.2
-Office and administrative support,15.1
-"Farming, fishing and forestry",0.6
-Construction and extraction,4.3
-"Installation, maintenance and repair",3.8
-Production,6.1
-Transportation and material moving,6.5
-Total,99.8
+Job Class,Percentage,Link
+Management,6.1,https://en.wikipedia.org/wiki/Management
+Business and Financial operations,5,https://www.bls.gov/oes/current/oes130000.htm
+Computer and Mathematical,2.7,https://www.bls.gov/oes/current/oes150000.htm
+Architecture and Engineering,1.7,https://www.discovermagazine.com/planet-earth/the-leaning-tower-of-pisa-wasnt-supposed-to-lean
+"Life, Physical and Social Science",0.9,https://thebestschools.org/careers/career-guide/life-physical-social-sciences-careers/#:~:text=Life%20sciences%20careers%20typically%20involve,society%20and%20relationships%20of%20individuals.
+Community and Social Service,1.6,https://collegegrad.com/careers/community-and-social-service
+Legal,0.8,https://www.youtube.com/watch?v=ZbZndWCq6Gs
+"Education, training and library",6.1,https://www.bls.gov/ooh/education-training-and-library/home.htm
+"Arts, design, entertainment, sports and media",1.7,https://www.onetonline.org/find/family?f=27&g=Go
+Healthcare practioners and technical,5.5,https://www.bls.gov/oes/current/oes290000.htm
+Healthcare support,2.8,https://www.healthcaresupport.com/
+Protective service,2.3,https://ocfs.ny.gov/programs/adult-svcs/aps/
+Food preparation and serving,8.3,https://www.youtube.com/watch?v=EcyhVHrmlMU
+Building and grounds cleaning and maintenance,3.7,https://en.wikipedia.org/wiki/Sanitary_engineering
+Personal care and service,4,https://www.bls.gov/ooh/personal-care-and-service/home.htm
+Sales,10.2,https://en.wikipedia.org/wiki/Money
+Office and administrative support,15.1,https://stuy.enschool.org/apps/pages/index.jsp?uREC_ID=345922&type=u
+"Farming, fishing and forestry",0.6,https://collegegrad.com/careers/farming-fishing-and-forestry
+Construction and extraction,4.3,https://www.bls.gov/oes/current/oes470000.htm#:~:text=Construction%20and%20Extraction%20Occupations%20comprises,Floor%20Sanders%20and%20Finishers%3B%20Tile
+"Installation, maintenance and repair",3.8,https://www.indeed.com/q-Installation-Maintenance-Repair-jobs.html?vjk=4203dd38a368e3dd
+Production,6.1,https://en.wikipedia.org/wiki/Production_(economics)
+Transportation and material moving,6.5,https://www.transportation.gov/
+Total,99.8,https://yay
