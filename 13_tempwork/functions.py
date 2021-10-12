@@ -7,6 +7,7 @@ import csv
 import random
 
 def readfile(filepath):
+    ''' This function takes in a filepath and returns a dictionary with the items from the file'''
     # declaration of dictionary to hold occupations + percentages
     occupations_dict = {}
 
@@ -28,6 +29,7 @@ def readfile(filepath):
 
 
 def random_occupation(occupations):
+    '''Takes in a dictionary with the occupations and percentages and links and returns a random occupation based on percentage'''
     # choose random occupation given weights
     occupation_list = list(occupations.keys())
     values = occupations.values()

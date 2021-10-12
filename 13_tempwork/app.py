@@ -10,10 +10,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
+    '''This is the main page of the app'''
     return redirect("/occupyflaskst")
 
 @app.route("/occupyflaskst")
 def test_tmplt():
+    '''This function returns the template according to an html template'''
     # read in csv file to "occupations" dictionary
     occupations = functions.readfile("./data/occupations.csv")
     # choose random occupation
