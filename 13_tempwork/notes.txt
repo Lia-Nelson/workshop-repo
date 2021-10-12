@@ -3,11 +3,12 @@ SoftDev
 K13 -- Template for Success
 2021-10-08
 
+
 Things we noted:
 - random.choices seemed like the cleanest way to decide on an occupation
 - to loop in html, we copied the existing structure of {%}
 - it was cleaner to put our functions in a separate python file, import
-into app.py and then use them like that
+into app.py and then use them like that, since we had already written the code.
 - .values() on a dictionary makes a list of all the values
 - .items() has key, value pairs in a dictionary which made our for loop 
 convenient
@@ -17,3 +18,13 @@ specify that it is in the data folder
 we be using it?!?
 
 EGO:
+- It was interesting to read about the "the code you wrote, instead of 
+your code" part.
+- Can relate to parts when you get a bit defensive about your code.
+- Always better to write your code to be more readable, can also prevent
+silly mistakes from happening by having code be more readable.
+- Obvious benefits to working together on debugging code, and even when you are done,
+you can send it to somebody else so that they can read the debugged version and make
+sure that there are no errors.
+- Will be working together on debugging more as a group, as that seems like an 
+enormous benefit.
