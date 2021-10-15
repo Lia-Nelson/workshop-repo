@@ -2,3 +2,11 @@ Absent Duo (Annabel Zhang, Eliza Knapp)
 SoftDev
 K14 -- Form and Function
 2021-10-14
+
+In app.py,
+(app) refers to the program name
+(request) refers to the url where the refresh was made, which differs depending on whether you refreshed the website on the response page or landing page
+(request.args) refers to what was inputted, which we later find out is stored as a dictionary; also differs depending on which page you refreshed
+(request.headers) returns the rest of the page assets, including the host, browser, and platform
+
+Commented out (request.args['username']) would just print in terminal the username that was inputted
