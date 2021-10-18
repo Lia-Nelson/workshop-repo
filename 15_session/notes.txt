@@ -3,16 +3,19 @@ SoftDev
 K15 -- Sessions Greetings
 2021-10-18
 
-First, we ran the app from hw 14 and inputted a username. In the dev console, 
+First, we ran the app from hw 14 and inputted a username. In the dev console,
 we saw a get request from the localhost that we are running the app on,
 but then, it said 404 not found when it searches for a favicon.ico. We looked
-it up and it said that it was just the tab icon that it looked for but then 
+it up and it said that it was just the tab icon that it looked for but then
 didn't find.
 
 We have set up the conditional in app.py that checks whether the method
 is a post or a get method to determine whether to use .args or .form.
-We are not yet sure why it really matters what the difference is. We 
+We are not yet sure why it really matters what the difference is. We
 have yet to create a session.
+
+5:53PM - We have created a login session! Method can be specified in
+<form action> to ensure the right method is being used.
 
 Cookies! Stored locally! Server maintains the cookies, client uses them.
 request.cookies.get('username') same as -> request.form['username']
@@ -24,3 +27,9 @@ Sessions in flask
 
 Favicon.ico:
 https://www.cisco.com/c/en/us/support/docs/security/web-security-appliance/117995-qna-wsa-00.html
+
+Interesting link on sessions:
+https://pythonbasics.org/flask-sessions/
+
+Method Attribute in HTML forms:
+https://www.w3schools.com/html/html_forms_attributes.asp

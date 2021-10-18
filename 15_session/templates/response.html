@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<!-- 
+<!--
   Absent Duo (Annabel Zhang, Eliza Knapp)
   SoftDev
-  K14 -- Form and Function
-  2021-10-14
-
-     THIS IS THE RESPONSE PAGE!
-    
- -->
+  K15 -- Making a Login Page
+  2021-10-18
+-->
 
 
 <html>
@@ -21,16 +18,16 @@
       Absent Duo (Annabel Zhang, Eliza Knapp)
     </h1>
 
+
+
     <h2>
-      You have successfully submitted a username!
+      Hello, {{username}}! <br>
+      You have successfully logged in.
     </h2>
 
-
-    <h3>
-      Hello, {{username}}! <br>
-      You have used a {{reqMethod}} method. <br>
-      How are you?!?!
-    </h3>
+    <form action="/" method = "GET">
+      <input type="submit" value="Logout" >
+    </form>
     <br>
   </body>
 

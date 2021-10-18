@@ -1,19 +1,10 @@
 <!DOCTYPE html>
-<!-- 
+<!--
   Absent Duo (Annabel Zhang, Eliza Knapp)
   SoftDev
-  K14 -- Form and Function
-  2021-10-14
-
-     simple demo of HTML forms via Flask
-     
-     trioTASK:
-     If any member of team has forms experience, let their know-how osmote.
-     If no one does, seek external assistance.
-     PROTIP: Revisit code from intro if you have it.
-     Peruse this code together and discuss how it should work, in conjunction with the back end apparatus.
-    
- -->
+  K15 -- Making a Login Page
+  2021-10-18
+-->
 
 
 <html>
@@ -23,22 +14,17 @@
   </head>
 
   <body>
-    <h1>
-      Absent Duo (Annabel Zhang, Eliza Knapp)
-    </h1>
+    <h1> Absent Duo (Annabel Zhang, Eliza Knapp) </h1>
 
-    <h2>
-      Welcome, Travelers of the Intertoobz!
-    </h2>
+    <h2> Welcome, Travelers of the Intertoobz! </h2>
 
+    <h3><b> {{status}} </b> <br>
+      Enter your username below to proceed. </h3>
 
-    <h3>
-      Enter your username below to proceed.
-    </h3>
-    <form action="/auth">
+    <form action="/auth" method = "POST">
       <p>username:<input type="text" name="username"> </p>
       <p>password:<input type="text" name="password"></p>
-      <input type="submit" name="sub1"> 
+      <input type="submit" name="sub1">
     </form>
     <br>
   </body>
