@@ -42,17 +42,25 @@ def disp_loginpage():
 @app.route("/auth") # , methods=['GET', 'POST'])
 def authenticate():
     print("\n\n\n")
-    print("***DIAG: this Flask obj ***")
-    print(app)
-    print("***DIAG: request obj ***")
-    print(request)
-    print("***DIAG: request.args ***")
-    print(request.args)
-    
+    # print("***DIAG: this Flask obj ***")
+    # print(app)
+    # print("***DIAG: request obj ***")
+    # print(request)
+    # print("***DIAG: request.args ***")
+    # print(request.args)
+
     #print("***DIAG: request.args['username']  ***")
     #print(request.args['username'])
-    print("***DIAG: request.headers ***")
-    print(request.headers)
+    # print("***DIAG: request.headers ***")
+    # print(request.headers)
+    '''
+    if (request.method == "GET"):
+        # use request.args["username"]
+    elif (request.method == "POST"):
+        # use request.form("username")
+    else:
+        '''
+
     return render_template('response.html', username=request.args["username"], reqMethod=request.method)  #response to a form submission
 
 

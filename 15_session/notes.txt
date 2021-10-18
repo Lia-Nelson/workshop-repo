@@ -9,6 +9,10 @@ but then, it said 404 not found when it searches for a favicon.ico. We looked
 it up and it said that it was just the tab icon that it looked for but then 
 didn't find.
 
+We have set up the conditional in app.py that checks whether the method
+is a post or a get method to determine whether to use .args or .form.
+We are not yet sure why it really matters what the difference is. We 
+have yet to create a session.
 
 Cookies! Stored locally! Server maintains the cookies, client uses them.
 request.cookies.get('username') same as -> request.form['username']
