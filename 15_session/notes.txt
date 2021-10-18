@@ -1,0 +1,22 @@
+Absent Duo (Annabel Zhang, Eliza Knapp)
+SoftDev
+K15 -- Sessions Greetings
+2021-10-18
+
+First, we ran the app from hw 14 and inputted a username. In the dev console, 
+we saw a get request from the localhost that we are running the app on,
+but then, it said 404 not found when it searches for a favicon.ico. We looked
+it up and it said that it was just the tab icon that it looked for but then 
+didn't find.
+
+
+Cookies! Stored locally! Server maintains the cookies, client uses them.
+request.cookies.get('username') same as -> request.form['username']
+Sessions in flask
+- maintained by server, stored on client
+- payload encoded (not encrypted)
+- dictionary
+- cookie is securely signed
+
+Favicon.ico:
+https://www.cisco.com/c/en/us/support/docs/security/web-security-appliance/117995-qna-wsa-00.html
