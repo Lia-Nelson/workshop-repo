@@ -10,27 +10,32 @@ from flask_session import Session
 
 app = Flask(__name__)    #create Flask object
 
-app.secret_key = "secret key yay"
+app.secret_key = "secret key yay" 
+# ^^ note he said that later we use urandom(32)
+
+# hardcoded username and password
+username = "wombat"
+password = "cute"
 
 @app.route("/") #, methods=['GET', 'POST'])
 def disp_loginpage():
     # first check if it is already in session
-    if not session.get("wombat"):
+    if not session.get(username):
         return render_template( 'login.html' )
     else:
-        return render_template("response.html", username = "wombat")
+        return render_template("response.html", username = username)
 
 
 @app.route("/auth" , methods=['GET', 'POST'])
 # the form has now been submitted, so we must record the username in session
 def authenticate():
-    username = "wombat"
-    password = "cute"
     #runs if request method POST is used
     if request.method == "POST":
         # when it posts some data, record the user info in session data if it is correct
         if request.form["username"] == username and request.form["password"] == password:
-            session["wombat"] = "cute"
+            session[username] = password
+            # below prints the password in the console just to check
+            # print(session.get("wombat")) 
             return render_template("response.html", username = request.form["username"])
         else:
             # otherwise, display the incorrect stuff
@@ -43,8 +48,12 @@ def authenticate():
 @app.route("/logout")
 # ends the session
 def logout():
-    session["wombat"] = None
-    return render_template("login.html")
+    if username in session:
+        # print(session.items())
+        session.pop(username)
+        # print(session.items())
+        # the above print statement was meant to check if it was actually popped off
+    return redirect("/")
 
 if __name__ == "__main__":
     app.debug = True
