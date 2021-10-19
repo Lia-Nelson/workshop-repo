@@ -38,12 +38,18 @@ def authenticate():
             # print(session.get("wombat")) 
             return render_template("response.html", username = request.form["username"])
         else:
+            if not request.form["username"] == username:
+                # if the username is wrong, there should be no further information on the accuracy of the password
+                return render_template("login.html", status = "Wrong username. Try again.")
+            if request.form["username"] == username and not request.form["password"] == password:
+                return render_template("login.html", status = "Wrong password. Try again.")
             # otherwise, display the incorrect stuff
-            return render_template("login.html", status = "Wrong username and password combination. Try again.")
-    else: 
+    elif request.method == "GET":
         #it should not be a GET request
-        if request.method == "GET":
-            return render_template("login.html", status = "Wrong request method; use POST")
+        return render_template("login.html", status = "Wrong request method; use POST")
+    else:
+        #if nothing predictable is wrong, just say there is an error
+        return render_template("login.html", status = "Error!")
 
 @app.route("/logout")
 # ends the session

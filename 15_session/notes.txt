@@ -33,3 +33,14 @@ https://pythonbasics.org/flask-sessions/
 
 Method Attribute in HTML forms:
 https://www.w3schools.com/html/html_forms_attributes.asp
+
+Flask session object:
+https://pythonise.com/series/learning-flask/flask-session-object
+
+NEW UPDATES FROM TUESDAY THE 19TH FROM CLASS:
+First, instead of creating our own dictionary and checking the values, 
+we imported sessions and created a session, adding an item
+to the dictionary as we logged on using the correct username and 
+password (checked against the request.forms argument of a post 
+request). When it is time to log out, if the hardcoded username 
+is in session, then it pops it off the list.
