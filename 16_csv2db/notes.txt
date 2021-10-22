@@ -1,0 +1,22 @@
+Absent Duo (Annabel Zhang, Eliza Knapp)
+SoftDev
+K16 -- All About Database
+2021-10-18
+
+We discovered that sqlite3 in the terminal creates a shell where
+we can run terminal commands. Following the notes, we created a 
+database and inserted information into it using the terminal.
+We learned that to exit sqlite3, you can use control + D.
+When you want to work with a specific file, you can type .open
+filename which we used (in addition to doing it in the .py file)
+to check whether we uploaded values to the database correctly.
+
+When we tried it for the db_builder, it worked, but then we had
+to try to figure out how to add the values from the dictionary.
+We discovered (googled) that since the insertion is all in quotation marks, 
+we had to put question marks where we wanted variables and then put the 
+variables in parentheses as the second argument.
+
+
+
+
