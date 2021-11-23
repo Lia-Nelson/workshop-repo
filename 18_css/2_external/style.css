@@ -1,0 +1,60 @@
+/* Yea! -- Andrew Juang, Eliza Knapp, Yuqing Wu
+   SoftDev pd1
+   K18 -- CSS basics
+   2021-11-23 */
+
+.container {
+    font-family : "arial";
+    background-color:gray;
+    height:400px;
+}
+
+.body {
+    position: absolute;
+    left:200px;
+    top:60px;
+}
+
+.footer {
+    position: relative;
+    float:right;
+    width:100%;
+    text-align:right;
+    padding:10px;
+    background-color:#606060;
+    color:gray;
+    top:200px;
+}
+
+h1 {
+    color: white;
+    background-color:
+    lightgray;
+    text-align: center;
+}
+
+h3 {
+    position: relative;
+    margin:10px
+}
+
+ul {
+    list-style: none;
+    margin:10px;
+    padding:0px;
+}
+
+li {
+    color:white;
+    text-decoration: none;
+}
+
+#dimgray{
+    background-color:dimgray;
+}
+
+a{
+    color:white;
+    /* no underscore*/
+    text-decoration: none;
+}

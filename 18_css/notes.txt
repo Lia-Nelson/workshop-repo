@@ -1,0 +1,26 @@
+Yea! -- Andrew Juang, Eliza Knapp, Yuqing Wu
+SoftDev pd1
+K18 -- CSS basics
+2021-11-23
+
+div position
+    - static: not affected by top, bottom, left, right; positioned according to normal flow of doc
+    - relative: does not affect position of other elements; positioned relative to its normal position
+    - absolute: positioned relative to closest ancestor; positioned by top, bottom, left, right
+    - fixed: positioned relative to view, will not move if scroll
+    - sticky: positioned based on the user's scroll position; toggles between relative and fixed
+
+inline/internal/external
+    - the . signifies a class and can specify more than one element
+    - the # signifies an element with a specific id
+    - link the style sheet in the html head to access the css for external
+    - inline seems to be the most inefficient and disorganized way of adding css
+    - internal and external are virtually the same except external puts the css in a different .css file
+
+- Each html tag seems to only be able to have one class and one id.
+- CSS can select the name of a tag and apply the properties to those tags in html.
+- We were a bit confused about the relative position and what exactly is it relative to.
+- Positioning is confusing
+- Still unsure how footers work
+- Why doesn't link have an </link> tag?
+- We discovered how we can use ::before and ::after to insert contents into the html.
