@@ -1,0 +1,9 @@
+Yea! -- Andrew Juang, Eliza Knapp, Yuqing Wu
+SoftDev
+K19 -- A RESTful Journey Skyward
+2021-11-23
+
+- You can either use python's urllib and json libraries to fetch the json data from the API
+or you can use python's request library.
+- Making a get request and calling .json() seems to be the cleanest way to fetch the data
+- We wonder if there are any other drawbacks in using urllib or making a get request.
