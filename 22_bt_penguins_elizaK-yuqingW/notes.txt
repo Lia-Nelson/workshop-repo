@@ -1,0 +1,1 @@
+The current link item of a list in bootstrap does not get numbered.
