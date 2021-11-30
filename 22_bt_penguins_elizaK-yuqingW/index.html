@@ -22,6 +22,7 @@ K22 -- Who Does Frame Work For?
     <h1 class="bg-warning">Bootstrap Demo</h1>
     <h2><i>Penguins (Eliza Knapp, Yuqing Wu)</i></h2>
     <br>
+    <p><strong>Right Click</strong> and go to <strong>View Page Source</strong> to see the code</p>
 
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
@@ -30,7 +31,7 @@ K22 -- Who Does Frame Work For?
             List Item Types
           </button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
           <div class="accordion-body">
             <p class="text-danger" >Types of list items below</p> 
             <ul class="list-group list-group-numbered">
@@ -118,6 +119,29 @@ K22 -- Who Does Frame Work For?
     </div>
 
     <br>
+
+    <p>
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">See cards</a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">See carousel</button>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">See both!</button>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body">
+            Card Stuff
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body">
+            Carousel Stuff
+          </div>
+        </div>
+      </div>
+    </div>
+
     <br>
 
     <h3 class="text-danger" >You can organize items in tables and move them around!!</h3>
