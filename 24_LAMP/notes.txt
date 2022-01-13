@@ -1,0 +1,52 @@
+Stuff I ran:
+
+made account on site, added credits and put in card
+
+in terminal:
+typed: brew install doctl
+then: doctl auth init --context myUsername
+ok now pause and go to the control panel which is below all
+the clicky things on the dashboard (like deploy a droplet, etc.), adn find API on the side 
+and click it and hit general a token.
+copy the token, save it somehwere.
+now continue the init thingy with the token.
+
+switch to the right user 
+doctl auth list
+doct auth switch
+
+type in doctl auth list --context myUsername
+
+Then type:
+doctl compute ssh-key import TODO-KEY-NAME --public-key-file ~/.ssh/id_rsa.pub
+(generate a key first if u don't have one)
+
+Then follow the client instructions cuz they're easier and work
+
+now ssh into 
+root@ip_on_droplet
+apt update
+apt upgrade (y)
+
+now install a webserver
+apt install nginx (y)
+systemctl status nginx (to see if it's running)
+
+now open up new tab and paste ip in address field- it should say hello to nginx
+
+now type cd /var/www
+cd into the html folder to see the default html file
+
+for flask:
+$ sudo apt-get install python3-pip
+$ sudo apt-get install python3-dev
+$ sudo apt-get install python3-setuptools
+$ sudo apt-get install python3-venv
+$ sudo apt-get install build-essential libssl-dev libffi-dev 
+
+then continue to follow this?
+https://pythonforundergradengineers.com/flask-app-on-digital-ocean.html
+
+and the flask app now runs on a port!
+
+and you can run it as normal? but some fancy stuff to connect it to html... see doct above
