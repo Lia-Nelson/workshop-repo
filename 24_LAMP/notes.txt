@@ -54,3 +54,5 @@ and the flask app now runs on a port!
 and you can run it as normal? but some fancy stuff to connect it to html... see doct above
 
 for activating venv: source p01venv/bin/activate
+
+update!! all works but the database stuff doesn't...
