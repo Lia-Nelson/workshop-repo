@@ -147,7 +147,6 @@ Go to http://your_server_ip, you should see the default Ubuntu 20.04 Apache web 
     pip install requests
     ```
 OR (if the directory has a requirements.txt)
-
     ```
     pip install -r requirements.txt
     ```
@@ -156,7 +155,6 @@ OR (if the directory has a requirements.txt)
     ```
     nano (or vim...) app.py
     ```
-    
   Then: scroll to the ```if __name__ == "__main__"``` and alter ```app.run``` to 
   ```app.run(host='0.0.0.0')```
 
