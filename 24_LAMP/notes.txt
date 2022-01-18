@@ -1,3 +1,9 @@
+Steps
+1. Make an account on 
+
+
+
+
 Stuff I ran:
 
 made account on site, added credits and put in card
@@ -43,6 +49,8 @@ $ sudo apt-get install python3-dev
 $ sudo apt-get install python3-setuptools
 $ sudo apt-get install python3-venv
 $ sudo apt-get install build-essential libssl-dev libffi-dev 
+
+apt install python-pip (also tried bc couldn't find flask?)
 
 then continue to follow this?
 https://pythonforundergradengineers.com/flask-app-on-digital-ocean.html
@@ -102,3 +110,6 @@ OR (if the directory has a requirements.txt)
   python3 app.py
   ```
 8. Check if the app worked on port 5000 of your droplet (hopefully it does!!)
+for activating venv: source p01venv/bin/activate
+
+update!! all works but the database stuff doesn't...
