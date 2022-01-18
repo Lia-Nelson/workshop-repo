@@ -147,16 +147,19 @@ Go to http://your_server_ip, you should see the default Ubuntu 20.04 Apache web 
     pip install requests
     ```
 OR (if the directory has a requirements.txt)
+
     ```
     pip install -r requirements.txt
     ```
+
 6. Make a quick change to where your app loads- open up the file that runs the app (should be app.py) and put '0.0.0.0' in the run parentheses
     ```
     nano (or vim...) app.py
     ```
-  scroll to the ```if __name__ == "__main__"``` and alter ```app.run``` to 
+    
+  Then: scroll to the ```if __name__ == "__main__"``` and alter ```app.run``` to 
   ```app.run(host='0.0.0.0')```
-  
+
 7. Enable traffic on port 5000 on the ufw firewall (default flask port)
     ```
     sudo ufw allow 5000
