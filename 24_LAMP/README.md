@@ -131,39 +131,40 @@ Go to http://your_server_ip, you should see the default Ubuntu 20.04 Apache web 
    sudo apt-get install build-essential libssl-dev libffi-dev
    ```
 3. Find the code for the simplest version of a flask app– we recommend 14_form- and cd into that directory
-  ```
-  cd <workshop_repo_name>/<app_you_want>
-  ```
+    ```
+    cd <workshop_repo_name>/<app_you_want>
+    ```
 4. Make and activate a virtual environment in that directory
-  ```
-  python3 -m venv <environment_name>
-  source <environment_name>/bin/activate
-  ```
+    ```
+    python3 -m venv <environment_name>
+    source <environment_name>/bin/activate
+    ```
 5. Use pip install to get some basic packages 
-  ```
-  pip install wheel 
-  pip install flask
-  pip install uwsgi
-  pip install requests
-  ```
+    ```
+    pip install wheel 
+    pip install flask
+    pip install uwsgi
+    pip install requests
+    ```
 OR (if the directory has a requirements.txt)
-  ```
-  pip install -r requirements.txt
-  ```
+    ```
+    pip install -r requirements.txt
+    ```
 6. Make a quick change to where your app loads- open up the file that runs the app (should be app.py) and put '0.0.0.0' in the run parentheses
-  ```
-  nano (or vim...) app.py
-  ```
+    ```
+    nano (or vim...) app.py
+    ```
   scroll to the ```if __name__ == "__main__"``` and alter ```app.run``` to 
   ```app.run(host='0.0.0.0')```
+  
 7. Enable traffic on port 5000 on the ufw firewall (default flask port)
-  ```
-  sudo ufw allow 5000
-  ```
+    ```
+    sudo ufw allow 5000
+    ```
 7. Run the app
-  ```
-  python3 app.py
-  ```
+    ```
+    python3 app.py
+    ```
 8. Check if the app worked on port 5000 of your droplet (hopefully it does!!)
 
 
