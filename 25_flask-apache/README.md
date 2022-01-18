@@ -12,8 +12,9 @@
    sudo apt-get install python3-setuptools
    sudo apt-get install python3-venv
    sudo apt-get install build-essential libssl-dev libffi-dev
+   sudo apt-get install libapache2-mod-wsgi-py3
    ```
-3. Find the code for the simplest version of a flask app– perhaps k09? - and cd into that directory
+3. Find the code for the simplest version of a flask app– perhaps k09?- and cd into that directory
     ```
     cd <workshop_repo_name>/<app_you_want>
     ```
@@ -51,11 +52,19 @@ OR (if the directory has a requirements.txt)
     ```
 8. Check if the app worked on port 5000 of your droplet (hopefully it does!!)
 
+### Make it run in a nicer place
+sudo nano /etc/apache2/sites-available/appname.conf
+- paste stuff from second link
+
+
 ### Resources
 * https://pythonforundergradengineers.com/flask-app-on-digital-ocean.html
+* https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
 ---
 
 Accurate as of (last update): 2022-01-11
 
 #### Contributors:  
-Eliza Knapp, pd2
+Eliza Knapp, pd2  
+Andrew Juang, pd2  
+Noakai Aronesty, pd2

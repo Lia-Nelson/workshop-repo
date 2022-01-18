@@ -1,0 +1,3 @@
+### Make it run in a nicer place
+sudo nano /etc/apache2/sites-available/appname.conf
+- paste stuff from second link
