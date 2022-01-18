@@ -180,7 +180,5 @@ OR (if the directory has a requirements.txt)
 Accurate as of (last update): 2022-01-11
 
 #### Contributors:  
-Andrew Juang, pd2
-Eliza Knapp, pd 2
-
-_Note: the two spaces after each name are important! ( <--burn after reading)  _
+Andrew Juang, pd2  
+Eliza Knapp, pd2
