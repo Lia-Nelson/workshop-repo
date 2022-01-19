@@ -127,7 +127,7 @@ OR (if the directory has a requirements.txt)
    ```
    sudo python3 __init__.py 
    ```
-4. Configure and enable virtual host
+4. Configure and enable virtual host (note again that all the FlaskApp -> <your_new_name>)
    ```
    sudo nano /etc/apache2/sites-available/FlaskApp.conf
    ```
