@@ -1,3 +1,15 @@
+# how-to :: DEPLOY A FLASK APP ON APACHE2
+---
+## Overview
+Guide to creating a deploying a Flask app on Apache2
+
+### Estimated Time Cost: 30 minutes
+
+### Prerequisites:
+- A Digital Ocean account with a payment method
+- You are breathing
+
+## Instructions (Two Different Methods)
 ### Add your first app on the droplet! 
 1. Clone your workshop repo onto the new machine (use http unless you want to add a key to the VM)
    ```
@@ -52,17 +64,126 @@ OR (if the directory has a requirements.txt)
     ```
 8. Check if the app worked on port 5000 of your droplet (hopefully it does!!)
 
-### Make it run in a nicer place
-sudo nano /etc/apache2/sites-available/appname.conf
-- paste stuff from second link
 
+
+### Deploying Flask app with virtual host
+1. Enable mod_wsgi
+   ```
+   sudo apt-get install libapache2-mod-wsgi-py3 python-dev
+   ```
+   ```
+   sudo a2enmod wsgi 
+   ```
+2. Create flask app (replace FlaskApp with name you would like to give)
+   ```
+   cd /var/www
+   ```
+   ```
+   sudo mkdir FlaskApp
+   ```
+   ```
+   cd FlaskApp
+   ```
+    ```
+   sudo mkdir FlaskApp
+   ```
+   ```
+   cd FlaskApp
+   ```
+   ```
+   sudo mkdir static templates
+   ```
+   Add the contents of your flask app into __init__.py
+   ```
+   sudo nano __init__.py 
+   ```
+   ```
+   from flask import Flask
+   app = Flask(__name__)
+   @app.route("/")
+   def hello():
+   	return "Hello, I hate Digital Ocean!"
+   if __name__ == "__main__":
+   	app.run()
+   ```
+3. Install Flask
+   ```
+   sudo apt-get install python3-pip 
+   ```
+   ```
+   sudo pip3 install virtualenv 
+   ```
+   replace venv with the name of virtual environment
+   ```
+   sudo virtualenv venv
+   ```
+   ```
+   source venv/bin/activate 
+   ```
+   ```
+   sudo pip3 install Flask 
+   ```
+   Test if you installed it
+   ```
+   sudo python3 __init__.py 
+   ```
+4. Configure and enable virtual host
+   ```
+   sudo nano /etc/apache2/sites-available/FlaskApp.conf
+   ```
+   Change mywebsite.com to the IP, and FlaskApp to name of your flask app
+   ```
+   <VirtualHost *:80>
+		ServerName mywebsite.com
+		ServerAdmin admin@mywebsite.com
+		WSGIScriptAlias / /var/www/FlaskApp/flaskapp.wsgi
+		<Directory /var/www/FlaskApp/FlaskApp/>
+			Order allow,deny
+			Allow from all
+		</Directory>
+		Alias /static /var/www/FlaskApp/FlaskApp/static
+		<Directory /var/www/FlaskApp/FlaskApp/static/>
+			Order allow,deny
+			Allow from all
+		</Directory>
+		ErrorLog ${APACHE_LOG_DIR}/error.log
+		LogLevel warn
+		CustomLog ${APACHE_LOG_DIR}/access.log combined
+   </VirtualHost>
+   ```
+   Enable Virtual Host
+   ```
+   sudo a2ensite FlaskApp
+   ```
+5. Create WSGI file 
+   ```
+   cd /var/www/FlaskApp
+   ```
+   ```
+   sudo nano flaskapp.wsgi 
+   ```
+   ```
+   #!/usr/bin/python
+   import sys
+   import logging
+   logging.basicConfig(stream=sys.stderr)
+   sys.path.insert(0,"/var/www/FlaskApp/")
+
+   from FlaskApp import app as application
+   application.secret_key = 'Add your secret key'
+   ```
+6. Apply changes
+   ```
+   sudo service apache2 restart 
+   ```
+You should be able to access your virtual host at your ip. 
 
 ### Resources
 * https://pythonforundergradengineers.com/flask-app-on-digital-ocean.html
 * https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
 ---
 
-Accurate as of (last update): 2022-01-11
+Accurate as of (last update): 2022-01-18
 
 #### Contributors:  
 Eliza Knapp, pd2  
