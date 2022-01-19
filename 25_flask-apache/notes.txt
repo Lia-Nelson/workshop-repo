@@ -1,3 +1,8 @@
-### Make it run in a nicer place
-sudo nano /etc/apache2/sites-available/appname.conf
-- paste stuff from second link
+What stuff means!
+
+(particularly for deploying flask app w virtual host)
+
+WSGI (web server gateway interface)- allows the server and the actual website to talk
+- mod-wsgi is the wsgi that allows apache to serve flask apps
+
+Pip- thing that's used to install flask stuff
