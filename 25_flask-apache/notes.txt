@@ -14,3 +14,7 @@ this told me my local modules wouldn't load
 
 this fixes my error- will edit files later:
 https://www.digitalocean.com/community/questions/python-can-t-find-local-files-modules
+
+above everything include these two lines:
+import sys
+sys.path.append("/var/www/FlaskApp/FlaskApp/")
