@@ -6,3 +6,11 @@ WSGI (web server gateway interface)- allows the server and the actual website to
 - mod-wsgi is the wsgi that allows apache to serve flask apps
 
 Pip- thing that's used to install flask stuff
+
+ON ADDING P01:
+
+to see errors run: sudo cat /var/log/apache2/error.log
+this told me my local modules wouldn't load
+
+this fixes my error- will edit files later:
+https://www.digitalocean.com/community/questions/python-can-t-find-local-files-modules
