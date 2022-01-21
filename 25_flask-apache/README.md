@@ -125,12 +125,15 @@ You should be able to access your virtual host at your ip.
 
 ### IMPORTANT!!! How to deploy more complicated apps (with multiple files and db files)
 There are three important new things to account for as your app gets larger...
+
 1. First off, (I think) you have to move the stuff from the app directory into your innermost FlaskApp directory so apache(2) can most easily find the init file. The quick way to do this is by using scp -r to move your app folder into your outermost FlaskApp folder and just changing the name (but remember to bring along your requirements.txt file for the venv).
+
 2. Second!! For some odd reason, it's hard for apache to find your local helper .py files (locally imported modules). So, at the top of the file that imports all the local modules (generally __init__.py), add the following code:
 	```
 	import sys
 	sys.path.append("/var/www/FlaskApp/FlaskApp")
 	```
+
 3. Third (And finally)! Change the permissions on the database file so that apache can definitely access it.
 	* Change the owner of the db file to apache
 	```
