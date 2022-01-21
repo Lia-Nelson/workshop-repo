@@ -18,3 +18,10 @@ https://www.digitalocean.com/community/questions/python-can-t-find-local-files-m
 above everything include these two lines:
 import sys
 sys.path.append("/var/www/FlaskApp/FlaskApp/")
+
+Now to fix the db file problems:
+1. sudo chown www-data:www-data your_db_file.db
+2. put the db file in its own directory to be sure the permissions change properly- you can call it tmp
+3. now, change all the "your_db_file.db" to "tmp/your_db_file.db"
+4. finally, sudo chmod 755 tmp which changes the permission to rwx for the user and rx for everyone else
+5. Now that the priviledges for the db file are in place, run sudo service apache2 restart again and hopefully it works? (if it doesn't, go find more problems by running: sudo cat /var/log/apache2/error.log)
